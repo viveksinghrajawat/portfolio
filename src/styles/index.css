@@ -1,0 +1,31 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+@layer base {
+  :root {
+    --font-sans: "Inter", sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .spacing-8 {
+    @apply gap-2;
+  }
+  .spacing-16 {
+    @apply gap-4;
+  }
+  .spacing-24 {
+    @apply gap-6;
+  }
+}
